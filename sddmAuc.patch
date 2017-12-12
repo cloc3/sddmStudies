@@ -1,0 +1,2542 @@
+diff -ruN sddm/CMakeLists.txt.user sddmAuc/CMakeLists.txt.user
+--- sddm/CMakeLists.txt.user	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/CMakeLists.txt.user	2016-08-05 00:12:36.118911261 +0200
+@@ -0,0 +1,540 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE QtCreatorProject>
++<!-- Written by QtCreator 4.0.3, 2016-08-05T00:12:36. -->
++<qtcreator>
++ <data>
++  <variable>EnvironmentId</variable>
++  <value type="QByteArray">{7cc16975-ef17-4480-ba6c-b4b7c14415f9}</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.ActiveTarget</variable>
++  <value type="int">0</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.EditorSettings</variable>
++  <valuemap type="QVariantMap">
++   <value type="bool" key="EditorConfiguration.AutoIndent">true</value>
++   <value type="bool" key="EditorConfiguration.AutoSpacesForTabs">false</value>
++   <value type="bool" key="EditorConfiguration.CamelCaseNavigation">true</value>
++   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.0">
++    <value type="QString" key="language">Cpp</value>
++    <valuemap type="QVariantMap" key="value">
++     <value type="QByteArray" key="CurrentPreferences">CppGlobal</value>
++    </valuemap>
++   </valuemap>
++   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.1">
++    <value type="QString" key="language">QmlJS</value>
++    <valuemap type="QVariantMap" key="value">
++     <value type="QByteArray" key="CurrentPreferences">QmlJSGlobal</value>
++    </valuemap>
++   </valuemap>
++   <value type="int" key="EditorConfiguration.CodeStyle.Count">2</value>
++   <value type="QByteArray" key="EditorConfiguration.Codec">UTF-8</value>
++   <value type="bool" key="EditorConfiguration.ConstrainTooltips">false</value>
++   <value type="int" key="EditorConfiguration.IndentSize">4</value>
++   <value type="bool" key="EditorConfiguration.KeyboardTooltips">false</value>
++   <value type="int" key="EditorConfiguration.MarginColumn">80</value>
++   <value type="bool" key="EditorConfiguration.MouseHiding">true</value>
++   <value type="bool" key="EditorConfiguration.MouseNavigation">true</value>
++   <value type="int" key="EditorConfiguration.PaddingMode">1</value>
++   <value type="bool" key="EditorConfiguration.ScrollWheelZooming">true</value>
++   <value type="bool" key="EditorConfiguration.ShowMargin">false</value>
++   <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">0</value>
++   <value type="bool" key="EditorConfiguration.SmartSelectionChanging">true</value>
++   <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
++   <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
++   <value type="int" key="EditorConfiguration.TabSize">8</value>
++   <value type="bool" key="EditorConfiguration.UseGlobal">true</value>
++   <value type="int" key="EditorConfiguration.Utf8BomBehavior">1</value>
++   <value type="bool" key="EditorConfiguration.addFinalNewLine">true</value>
++   <value type="bool" key="EditorConfiguration.cleanIndentation">true</value>
++   <value type="bool" key="EditorConfiguration.cleanWhitespace">true</value>
++   <value type="bool" key="EditorConfiguration.inEntireDocument">false</value>
++  </valuemap>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.PluginSettings</variable>
++  <valuemap type="QVariantMap"/>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.Target.0</variable>
++  <valuemap type="QVariantMap">
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{266a305d-3a27-459d-b63a-ee05f85c5de9}</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">1</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
++    <valuelist type="QVariantList" key="CMake.Configuration"/>
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/cloc3/documenti/sddm/test/build-sddmAuc-Desktop-Default</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">all</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">all</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Default</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Default</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
++    <valuelist type="QVariantList" key="CMake.Configuration">
++     <value type="QString">CMAKE_BUILD_TYPE:STRING=Debug</value>
++    </valuelist>
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/cloc3/documenti/sddm/build-sddmAuc-Desktop-Debug</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString"></value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">clean</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
++    <valuelist type="QVariantList" key="CMake.Configuration">
++     <value type="QString">CMAKE_BUILD_TYPE:STRING=Release</value>
++    </valuelist>
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/cloc3/documenti/sddm/build-sddmAuc-Desktop-Release</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString"></value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">clean</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.3">
++    <valuelist type="QVariantList" key="CMake.Configuration">
++     <value type="QString">CMAKE_BUILD_TYPE:STRING=RelWithDebInfo</value>
++    </valuelist>
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/cloc3/documenti/sddm/build-sddmAuc-Desktop-Release with Debug Information</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString"></value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">clean</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release with Debug Information</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release with Debug Information</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.4">
++    <valuelist type="QVariantList" key="CMake.Configuration">
++     <value type="QString">CMAKE_BUILD_TYPE:STRING=MinSizeRel</value>
++    </valuelist>
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/cloc3/documenti/sddm/build-sddmAuc-Desktop-Minimum Size Release</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString"></value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
++      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
++       <value type="QString">clean</value>
++      </valuelist>
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Minimum Size Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">5</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy locally</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.DefaultDeployConfiguration</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings"/>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
++    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
++    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
++    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
++    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
++    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
++    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
++    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
++    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
++    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
++    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
++    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
++    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
++    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
++     <value type="int">0</value>
++     <value type="int">1</value>
++     <value type="int">2</value>
++     <value type="int">3</value>
++     <value type="int">4</value>
++     <value type="int">5</value>
++     <value type="int">6</value>
++     <value type="int">7</value>
++     <value type="int">8</value>
++     <value type="int">9</value>
++     <value type="int">10</value>
++     <value type="int">11</value>
++     <value type="int">12</value>
++     <value type="int">13</value>
++     <value type="int">14</value>
++    </valuelist>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">sddm</value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/cloc3/documenti/sddm/test/build-sddmAuc-Desktop-Default/src/daemon</value>
++    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
++    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">sddm (disabled)</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sddm</value>
++    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
++    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
++    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
++    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
++    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
++    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
++    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
++    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
++    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
++    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
++    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
++    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
++    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
++    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
++    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
++    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
++     <value type="int">0</value>
++     <value type="int">1</value>
++     <value type="int">2</value>
++     <value type="int">3</value>
++     <value type="int">4</value>
++     <value type="int">5</value>
++     <value type="int">6</value>
++     <value type="int">7</value>
++     <value type="int">8</value>
++     <value type="int">9</value>
++     <value type="int">10</value>
++     <value type="int">11</value>
++     <value type="int">12</value>
++     <value type="int">13</value>
++     <value type="int">14</value>
++    </valuelist>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">sddm-greeter</value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments">--theme /home/cloc3/documenti/sddm/sddmAuc/data/themes/autoComp</value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/cloc3/documenti/sddm/test/build-sddmAuc-Desktop-Default/src/greeter</value>
++    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
++    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">sddm-greeter (disabled)</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sddm-greeter</value>
++    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
++    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
++    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
++    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
++    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
++    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
++    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
++    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
++    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
++    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
++    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
++    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
++    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
++    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
++    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
++    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
++     <value type="int">0</value>
++     <value type="int">1</value>
++     <value type="int">2</value>
++     <value type="int">3</value>
++     <value type="int">4</value>
++     <value type="int">5</value>
++     <value type="int">6</value>
++     <value type="int">7</value>
++     <value type="int">8</value>
++     <value type="int">9</value>
++     <value type="int">10</value>
++     <value type="int">11</value>
++     <value type="int">12</value>
++     <value type="int">13</value>
++     <value type="int">14</value>
++    </valuelist>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">sddm-helper</value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/cloc3/documenti/sddm/test/build-sddmAuc-Desktop-Default/src/helper</value>
++    <value type="int" key="PE.EnvironmentAspect.Base">-1</value>
++    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">sddm-helper (disabled)</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sddm-helper</value>
++    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
++    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
++    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
++    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
++    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
++    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
++    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
++    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
++    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
++    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
++    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
++    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
++    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
++    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
++    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
++    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
++     <value type="int">0</value>
++     <value type="int">1</value>
++     <value type="int">2</value>
++     <value type="int">3</value>
++     <value type="int">4</value>
++     <value type="int">5</value>
++     <value type="int">6</value>
++     <value type="int">7</value>
++     <value type="int">8</value>
++     <value type="int">9</value>
++     <value type="int">10</value>
++     <value type="int">11</value>
++     <value type="int">12</value>
++     <value type="int">13</value>
++     <value type="int">14</value>
++    </valuelist>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">ConfigurationTest</value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
++    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/cloc3/documenti/sddm/test/build-sddmAuc-Desktop-Default/test</value>
++    <value type="int" key="PE.EnvironmentAspect.Base">-1</value>
++    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">ConfigurationTest (disabled)</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.ConfigurationTest</value>
++    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
++    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
++    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">4</value>
++  </valuemap>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.TargetCount</variable>
++  <value type="int">1</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
++  <value type="int">18</value>
++ </data>
++ <data>
++  <variable>Version</variable>
++  <value type="int">18</value>
++ </data>
++</qtcreator>
+diff -ruN sddm/components/2.0/UNameBox.qml sddmAuc/components/2.0/UNameBox.qml
+--- sddm/components/2.0/UNameBox.qml	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/components/2.0/UNameBox.qml	2016-08-05 00:08:03.461675104 +0200
+@@ -0,0 +1,130 @@
++/***************************************************************************
++*Copyright (c) 2013 Nikita Mikhaylov <nslqqq@gmail.com>
++*
++*Permission is hereby granted, free of charge, to any person
++*obtaining a copy of this software and associated documentation
++*files (the "Software"), to deal in the Software without restriction,
++*including without limitation the rights to use, copy, modify, merge,
++*publish, distribute, sublicense, and/or sell copies of the Software,
++*and to permit persons to whom the Software is furnished to do so,
++*subject to the following conditions:
++*
++*The above copyright notice and this permission notice shall be included
++*in all copies or substantial portions of the Software.
++*
++*THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
++*OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++*FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
++*THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
++*OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
++*ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
++*OR OTHER DEALINGS IN THE SOFTWARE.
++*
++***************************************************************************/
++
++import QtQuick 2.0
++
++FocusScope {
++        id: container
++        width: 150; height: 30
++
++        property int auC: userModel.initAutoCompletion;
++        property color color: "white"
++        property color borderColor: "#ababab"
++        property color focusColor: "#266294"
++        property color hoverColor: "#5692c4"
++        property alias radius: main.radius
++        property alias font: innerText.font
++        property alias textColor: innerText.color
++        property string inputText: ""
++        property string completion: " - completion"
++        property alias text: innerText.text
++        property string head
++        property string tail
++        property string username: head+tail
++
++        signal sendSearchSeed(string testo)
++
++    Rectangle {
++        id: main
++
++        width: 150; height: 30
++        anchors.verticalCenter: parent.verticalCenter
++
++        color: parent.activeFocus? "#f1f1f1" : "#ffffff"
++        border.color: container.borderColor
++        border.width:1
++
++        Behavior on border.color { ColorAnimation { duration: 100 } }
++        states: [
++            State {
++                name: "hover"; when: mouseArea.containsMouse
++                PropertyChanges {
++                    target: main
++                    border.width: 1
++                    border.color: container.hoverColor
++                    color: parent.activeFocus? "#f1f1f1" : "#ffffff"
++                }
++            },
++            State {
++                name: "focus"; when: container.activeFocus && !mouseArea.containsMouse
++                PropertyChanges {
++                    target: main
++                    border.width: 1
++                    border.color: container.focusColor
++                }
++            }
++        ]
++    }
++
++    Keys.onPressed: {
++        if (
++            event.key === Qt.Key_Return ||
++            event.key === Qt.Key_Enter  ||
++            event.key === Qt.Key_Escape ||
++            event.key === Qt.Key_Tab
++            )
++        {
++            this.focus= false
++            event.editingFinished()
++            this.sendSearchSeed(event.text)
++        }
++          else if (event.key === Qt.Key_Backspace)
++        {
++            this.inputText=this.inputText.slice(0,-1)
++            this.sendSearchSeed(event.text)
++        }
++          else if (event.text==="");
++          else
++        {
++            this.inputText += event.text
++            this.sendSearchSeed(event.text)
++        }
++        userModel.head=event.text
++        userModel.tail=""
++        head = userModel.head
++        tail = userModel.tail
++        event.accepted
++    }
++
++    MouseArea {
++        id: mouseArea
++        cursorShape: parent.activeFocus? Qt.IBeamCursor : Qt.PointingHandCursor
++
++        anchors.fill: container
++
++        hoverEnabled: true
++
++        onEntered: if(main.state=="") main.state = "hover"
++        onExited: if(main.state=="hover") main.state = ""
++        onClicked: parent.focus = true
++    }
++    Text {
++        id: innerText
++        width: parent.width - 16
++        anchors.centerIn: parent
++        textFormat: Text.RichText
++        text: "<span style='font:bold'>" + head + "</span><span style='font: italic; color: grey'>" + tail + "</span>"
++        focus: true
++    }
++}
+diff -ruN sddm/components/CMakeLists.txt sddmAuc/components/CMakeLists.txt
+--- sddm/components/CMakeLists.txt	2016-08-04 20:18:43.665175428 +0200
++++ sddmAuc/components/CMakeLists.txt	2016-08-04 19:26:03.567136378 +0200
+@@ -1,4 +1,5 @@
+ configure_file("${COMPONENTS_VERSION}/LayoutBox.qml" "${COMPONENTS_VERSION}/LayoutBox.qml")
++configure_file("${COMPONENTS_VERSION}/UNameBox.qml" "${COMPONENTS_VERSION}/UNameBox.qml")
+ configure_file("common/qmldir" "common/qmldir")
+ 
+ install(DIRECTORY "${COMPONENTS_VERSION}/" DESTINATION "${QT_IMPORTS_DIR}/SddmComponents")
+diff -ruN sddm/components/common/qmldir sddmAuc/components/common/qmldir
+--- sddm/components/common/qmldir	2016-08-04 20:18:43.665175428 +0200
++++ sddmAuc/components/common/qmldir	2016-08-04 19:26:59.670796407 +0200
+@@ -11,3 +11,4 @@
+ PictureBox      ${COMPONENTS_VERSION} PictureBox.qml
+ TextBox         ${COMPONENTS_VERSION} TextBox.qml
+ TextConstants   ${COMPONENTS_VERSION} TextConstants.qml
++UNameBox        ${COMPONENTS_VERSION} UNameBox.qml
+I file binari sddm/data/themes/autoComp/angle-down.png e sddmAuc/data/themes/autoComp/angle-down.png sono diversi
+I file binari sddm/data/themes/autoComp/elarun.jpg e sddmAuc/data/themes/autoComp/elarun.jpg sono diversi
+I file binari sddm/data/themes/autoComp/images/background.png e sddmAuc/data/themes/autoComp/images/background.png sono diversi
+I file binari sddm/data/themes/autoComp/images/lock.png e sddmAuc/data/themes/autoComp/images/lock.png sono diversi
+I file binari sddm/data/themes/autoComp/images/login_active.png e sddmAuc/data/themes/autoComp/images/login_active.png sono diversi
+I file binari sddm/data/themes/autoComp/images/login_normal.png e sddmAuc/data/themes/autoComp/images/login_normal.png sono diversi
+I file binari sddm/data/themes/autoComp/images/rectangle_overlay.png e sddmAuc/data/themes/autoComp/images/rectangle_overlay.png sono diversi
+I file binari sddm/data/themes/autoComp/images/rectangle.png e sddmAuc/data/themes/autoComp/images/rectangle.png sono diversi
+I file binari sddm/data/themes/autoComp/images/session_normal.png e sddmAuc/data/themes/autoComp/images/session_normal.png sono diversi
+I file binari sddm/data/themes/autoComp/images/system_hibernate.png e sddmAuc/data/themes/autoComp/images/system_hibernate.png sono diversi
+I file binari sddm/data/themes/autoComp/images/system_reboot.png e sddmAuc/data/themes/autoComp/images/system_reboot.png sono diversi
+I file binari sddm/data/themes/autoComp/images/system_shutdown.png e sddmAuc/data/themes/autoComp/images/system_shutdown.png sono diversi
+I file binari sddm/data/themes/autoComp/images/system_suspend.png e sddmAuc/data/themes/autoComp/images/system_suspend.png sono diversi
+I file binari sddm/data/themes/autoComp/images/system_switch_user.png e sddmAuc/data/themes/autoComp/images/system_switch_user.png sono diversi
+I file binari sddm/data/themes/autoComp/images/user_icon.png e sddmAuc/data/themes/autoComp/images/user_icon.png sono diversi
+diff -ruN sddm/data/themes/autoComp/Main.qml sddmAuc/data/themes/autoComp/Main.qml
+--- sddm/data/themes/autoComp/Main.qml	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/data/themes/autoComp/Main.qml	2016-08-04 19:29:12.327993896 +0200
+@@ -0,0 +1,301 @@
++/***************************************************************************
++* Copyright (c) 2013 Reza Fatahilah Shah <rshah0385@kireihana.com>
++* Copyright (c) 2013 Abdurrahman AVCI <abdurrahmanavci@gmail.com>
++*
++* Permission is hereby granted, free of charge, to any person
++* obtaining a copy of this software and associated documentation
++* files (the "Software"), to deal in the Software without restriction,
++* including without limitation the rights to use, copy, modify, merge,
++* publish, distribute, sublicense, and/or sell copies of the Software,
++* and to permit persons to whom the Software is furnished to do so,
++* subject to the following conditions:
++*
++* The above copyright notice and this permission notice shall be included
++* in all copies or substantial portions of the Software.
++*
++* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
++* OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
++* THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
++* OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
++* ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
++* OR OTHER DEALINGS IN THE SOFTWARE.
++*
++***************************************************************************/
++
++import QtQuick 2.0
++import SddmComponents 2.0
++//import QtQuick ${COMPONENTS_VERSION}
++//import SddmComponents ${COMPONENTS_VERSION}
++
++Rectangle {
++    width: 640
++    height: 480
++
++    LayoutMirroring.enabled: Qt.locale().textDirection == Qt.RightToLeft
++    LayoutMirroring.childrenInherit: true
++
++    TextConstants { id: textConstants }
++
++    Connections {
++        target: sddm
++        onLoginSucceeded: {
++        }
++        onLoginFailed: {
++        }
++    }
++
++    Background {
++        anchors.fill: parent
++        source: config.background
++        fillMode: Image.PreserveAspectCrop
++        onStatusChanged: {
++            if (status == Image.Error && source != config.defaultBackground) {
++                source = config.defaultBackground
++            }
++        }
++    }
++
++    Rectangle {
++        anchors.fill: parent
++        color: "transparent"
++        //visible: primaryScreen
++
++        Rectangle {
++            width: 416; height: 262
++            color: "#00000000"
++
++            anchors.centerIn: parent
++
++            Image {
++                anchors.fill: parent
++                source: "images/rectangle.png"
++            }
++
++            Image {
++                anchors.fill: parent
++                source: "images/rectangle_overlay.png"
++                opacity: 0.1
++            }
++
++            Item {
++                anchors.margins: 20
++                anchors.fill: parent
++
++                Text {
++                    height: 50
++                    anchors.top: parent.top
++                    anchors.left: parent.left; anchors.right: parent.right
++
++                    color: "#0b678c"
++                    opacity: 0.75
++
++                    text: sddm.hostName
++
++                    font.bold: true
++                    font.pixelSize: 18
++                }
++
++                Column {
++                    anchors.centerIn: parent
++
++                    Row {
++                        Image { source: "images/user_icon.png" }
++                        UNameBox {
++                            id: user_entry
++                        }
++                    }
++
++/*
++                    Row {
++                        Image { source: "images/user_icon.png" }
++                        TextBox {
++                            id: user_entry2
++
++                            width: 150; height: 30
++                            anchors.verticalCenter: parent.verticalCenter;
++
++                            font.pixelSize: 14
++
++                            KeyNavigation.backtab: layoutBox; KeyNavigation.tab: pw_entry
++                        }
++                    }
++*/
++
++                    Row {
++
++                        Image { source: "images/lock.png" }
++
++                        PasswordBox {
++                            id: pw_entry
++                            width: 150; height: 30
++                            anchors.verticalCenter: parent.verticalCenter;
++
++                            tooltipBG: "CornflowerBlue"
++
++                            font.pixelSize: 14
++
++                            KeyNavigation.backtab: user_entry; KeyNavigation.tab: login_button
++
++                            Keys.onPressed: {
++                                if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
++                                    sddm.login(user_entry.userName, pw_entry.text, menu_session.index)
++                                    event.accepted = true
++                                }
++                            }
++                        }
++                    }
++                }
++
++                ImageButton {
++                    id: login_button
++                    anchors.right: parent.right
++                    anchors.verticalCenter: parent.verticalCenter
++                    anchors.margins: 20
++
++                    source: "images/login_normal.png"
++
++                    onClicked: sddm.login(user_entry.userName, pw_entry.text, menu_session.index)
++
++                    KeyNavigation.backtab: pw_entry; KeyNavigation.tab: session_button
++                }
++
++                Item {
++                    height: 20
++                    anchors.bottom: parent.bottom
++                    anchors.left: parent.left; anchors.right: parent.right
++
++                    Row {
++                        id: buttonRow
++                        anchors.left: parent.left
++                        anchors.verticalCenter: parent.verticalCenter
++
++                        spacing: 8
++
++                        ImageButton {
++                            id: system_button
++                            source: "images/system_shutdown.png"
++                            onClicked: sddm.powerOff()
++
++                            KeyNavigation.backtab: session_button; KeyNavigation.tab: reboot_button
++                        }
++
++                        ImageButton {
++                            id: reboot_button
++                            source: "images/system_reboot.png"
++                            onClicked: sddm.reboot()
++
++                            KeyNavigation.backtab: system_button; KeyNavigation.tab: suspend_button
++                        }
++
++                        ImageButton {
++                            id: suspend_button
++                            source: "images/system_suspend.png"
++                            visible: sddm.canSuspend
++                            onClicked: sddm.suspend()
++
++                            KeyNavigation.backtab: reboot_button; KeyNavigation.tab: hibernate_button
++                        }
++
++                        ImageButton {
++                            id: hibernate_button
++                            source: "images/system_hibernate.png"
++                            visible: sddm.canHibernate
++                            onClicked: sddm.hibernate()
++
++                            KeyNavigation.backtab: suspend_button; KeyNavigation.tab: session
++                        }
++                    }
++
++                    Text {
++                        id: time_label
++                        anchors.right: parent.right
++                        anchors.bottom: parent.bottom
++
++                        text: Qt.formatDateTime(new Date(), "dddd, dd MMMM yyyy HH:mm AP")
++
++                        horizontalAlignment: Text.AlignRight
++
++                        color: "#0b678c"
++                        font.bold: true
++                        font.pixelSize: 12
++                    }
++
++                    Menu {
++                        id: menu_session
++                        width: 200; height: 0
++                        anchors.top: buttonRow.bottom; anchors.left: buttonRow.left
++
++                        model: sessionModel
++                        index: sessionModel.lastIndex
++                    }
++                }
++            }
++        }
++    }
++
++    Rectangle {
++        id: actionBar
++        anchors.top: parent.top;
++        anchors.horizontalCenter: parent.horizontalCenter
++        width: parent.width; height: 40
++
++        Row {
++            anchors.left: parent.left
++            anchors.margins: 5
++            height: parent.height
++            spacing: 5
++
++            Text {
++                height: parent.height
++                anchors.verticalCenter: parent.verticalCenter
++
++                text: textConstants.session
++                font.pixelSize: 14
++                verticalAlignment: Text.AlignVCenter
++            }
++
++            ComboBox {
++                id: session
++                width: 245
++                anchors.verticalCenter: parent.verticalCenter
++
++                arrowIcon: "angle-down.png"
++
++                model: sessionModel
++                index: sessionModel.lastIndex
++
++                font.pixelSize: 14
++
++                KeyNavigation.backtab: hibernate_button; KeyNavigation.tab: layoutBox
++            }
++
++            Text {
++                height: parent.height
++                anchors.verticalCenter: parent.verticalCenter
++
++                text: textConstants.layout
++                font.pixelSize: 14
++                verticalAlignment: Text.AlignVCenter
++            }
++
++            LayoutBox {
++                id: layoutBox
++                width: 90
++                anchors.verticalCenter: parent.verticalCenter
++                font.pixelSize: 14
++
++                arrowIcon: "angle-down.png"
++
++                KeyNavigation.backtab: session; KeyNavigation.tab: user_entry
++            }
++        }
++    }
++
++    Component.onCompleted: {
++        if (user_entry.text === "")
++            user_entry.focus = true
++        else
++            pw_entry.focus = true
++    }
++}
+diff -ruN sddm/data/themes/autoComp/metadata.desktop sddmAuc/data/themes/autoComp/metadata.desktop
+--- sddm/data/themes/autoComp/metadata.desktop	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/data/themes/autoComp/metadata.desktop	2016-08-04 22:55:38.194725068 +0200
+@@ -0,0 +1,49 @@
++[SddmGreeterTheme]
++Name=AutoComp
++Name[ca]=AutoComp
++Name[da]=AutoComp
++Name[de]=AutoComp
++Name[el]=AutoComp
++Name[es]=AutoComp
++Name[et]=AutoComp
++Name[fi]=AutoComp
++Name[ga]=AutoComp
++Name[gl]=AutoComp
++Name[hu]=AutoComp
++Name[ia]=AutoComp
++Name[kk]=Еларун
++Name[ko]=AutoComp
++Name[mr]=एलारन
++Name[nb]=AutoComp
++Name[nl]=AutoComp
++Name[pl]=AutoComp
++Name[pt]=AutoComp
++Name[pt_BR]=AutoComp
++Name[ro]=AutoComp
++Name[ru]=Эларан
++Name[sk]=AutoComp
++Name[sl]=AutoComp
++Name[sr]=Еларун
++Name[sr@ijekavian]=Еларун
++Name[sr@ijekavianlatin]=AutoComp
++Name[sr@latin]=AutoComp
++Name[sv]=AutoComp
++Name[uk]=Еларан
++Name[x-test]=xxAutoCompxx
++Name[zh_CN]=AutoComp
++Name[zh_TW]=AutoComp
++
++Description=AutoComp KDM theme ported to SDDM. \nThe original theme is based on work of Roman Shtylman & Nuno Pinheiro
++Type=sddm-theme
++Author=Reza Fatahilah Shah
++Copyright=(c) 2013, Reza Fatahilah Shah
++Screenshot=elarun.jpg
++License=GPL
++Version=0.1
++MainScript=Main.qml
++ConfigFile=theme.conf
++TranslationsDirectory=translations
++Theme-Id=elarun
++Theme-API=${COMPONENTS_VERSION}
++Website=https://github.com/sddm/sddm
++
+diff -ruN sddm/data/themes/autoComp/README sddmAuc/data/themes/autoComp/README
+--- sddm/data/themes/autoComp/README	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/data/themes/autoComp/README	2016-08-04 19:08:06.491826845 +0200
+@@ -0,0 +1,13 @@
++This theme is based on the KDM Elarun theme, ported to SDDM theme.
++Thanks to these people for their great works.
++Not all functionality from original theme are ported.
++
++Background images:
++Author=Nuno Pinheiro
++Email=nuno@oxygen-icons.org
++License=LGPLv3
++
++Original KDM theme:
++Author=Roman Shtylman & Nuno Pinheiro
++Copyright=GPL 2010 Roman Shtylman | nuno@oxygen-icons.org, 2012 Nuno Pineheiro
++License=GPL
+diff -ruN sddm/data/themes/autoComp/theme.conf sddmAuc/data/themes/autoComp/theme.conf
+--- sddm/data/themes/autoComp/theme.conf	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/data/themes/autoComp/theme.conf	2016-08-04 19:08:06.495826820 +0200
+@@ -0,0 +1,2 @@
++[General]
++background=images/background.png
+diff -ruN sddm/data/themes/CMakeLists.txt sddmAuc/data/themes/CMakeLists.txt
+--- sddm/data/themes/CMakeLists.txt	2016-08-04 20:18:43.668175411 +0200
++++ sddmAuc/data/themes/CMakeLists.txt	2016-08-04 20:15:53.539166340 +0200
+@@ -1,4 +1,4 @@
+-set(THEMES elarun maldives)
++set(THEMES elarun maldives autoComp)
+ 
+ foreach(THEME ${THEMES})
+     # We assume that theme-specific translations are stored
+diff -ruN sddm/README.md sddmAuc/README.md
+--- sddm/README.md	2016-08-04 20:18:43.664175434 +0200
++++ sddmAuc/README.md	2016-08-05 00:14:52.583030703 +0200
+@@ -1,96 +1,38 @@
+-## INTRODUCTION
++This repository is a study for adding autocompletion feature in sddm (https://github.com/sddm/sddm).
+ 
+-[![Build Status](https://travis-ci.org/sddm/sddm.svg?branch=master)](https://travis-ci.org/sddm/sddm)
+-[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=sddm)
++DON'T USE THIS CODE IF YOU DON'T KNOW WHAT YOU ARE DOING.
+ 
+-SDDM is a modern display manager for X11 and Wayland aiming to be fast, simple and beautiful.
+-It uses modern technologies like QtQuick, which in turn gives the designer the ability to
+-create smooth, animated user interfaces.
++In this moment the patch is working, but it is well far to be ready.
+ 
+-SDDM is extremely themeable. We put no restrictions on the user interface design,
+-it is completely up to the designer. We simply provide a few callbacks to the user interface
+-which can be used for authentication, suspend etc.
+-
+-To further ease theme creation we provide some premade components like a textbox,
+-a combox etc.
+-
+-There are a few sample themes distributed with SDDM.
+-They can be used as a starting point for new themes.
+-
+-## SCREENSHOTS
+-
+-![sample screenshot](https://raw.github.com/sddm/sddm/master/src/greeter/theme/maui.jpg)
+-
+-## VIDEOS
+-
+-* [Video background](https://www.youtube.com/watch?v=kKwz2FQcE3c)
+-* [Maui theme 1](https://www.youtube.com/watch?v=-0d1wkcU9DU)
+-* [Maui theme 2](https://www.youtube.com/watch?v=dJ28mrOeuNA)
+-
+-## RESOURCES
+-
+-* [Issue tracker](https://github.com/sddm/sddm/issues)
+-* [Wiki](https://github.com/sddm/sddm/wiki)
+-* [Mailing List](https://groups.google.com/group/sddm-devel)
+-* IRC channel `#sddm` on [chat.freenode.net](https://webchat.freenode.net?channels=sddm)
+-
+-## INSTALLATION
+-
+-Qt >= 5.3.0 is required to use SDDM, although Qt >= 5.4.0 is recommended.
+-
+-SDDM runs the greeter as a system user named "sddm" whose home directory needs
+-to be set to `/var/lib/sddm`.
+-
+-If pam and systemd are available, the greeter will go through logind
+-which will give it access to drm devices.
+-
+-Distributions without pam and systemd will need to put the "sddm" user
+-into the "video" group, otherwise errors regarding GL and drm devices
+-might be experienced.
+-
+-## LICENSE
+-
+-Source code of SDDM is licensed under GNU GPL version 2 or later (at your choosing).
+-QML files are MIT licensed and images are CC BY 3.0.
+-
+-## TROUBLESHOOTING
+-
+-### NVIDIA Prime
+-
+-Add this at the bottom of the Xsetup script:
+-
+-```sh
+-if [ -e /sbin/prime-offload ]; then
+-    echo running NVIDIA Prime setup /sbin/prime-offload, you will need to manually run /sbin/prime-switch to shut down
+-    /sbin/prime-offload
+-fi
+-```
+-
+-### No User Icon
+-
+-SDDM reads user icon from either ~/.face.icon or FacesDir/username.face.icon
+-
+-You need to make sure that SDDM user have permissions to read those files.
+-In case you don't want to allow other users to access your $HOME you can use
+-ACLs if your filesystem does support it.
+-
+-```sh
+-setfacl -m u:sddm:x /home/username
+-setfacl -m u:sddm:r /home/username/.face.icon
+-```
+-
+-### Custom DPI
+-
+-In order to set custom DPI for high resolution screens you should configure
+-Xorg yourself.  An easy way is to pass an additional argument to Xorg.
+-
+-Edit ``/etc/sddm.conf``, go to the ``X11`` section and change ``ServerArguments`` like this:
+-
+-```
+-ServerArguments="-nolisten tcp -dpi 192"
+-```
+-
+-to set DPI to 192.
+-
+-As an alternative you can edit Xorg configuration ``xorg.conf``, please refer to the
+-Xorg documentation.
++All C++ code is included inside UserModel.cpp and UserModel.h files.
++A new UNameBox.qml component is added to interface autocompletion mechanism between qml and C++ code.
++A new theme "autoComp", derived from the basic "elarun", is available fo testing.
++
++The autocompletion engine mechanisme is based on a trie data structure (https://en.wikipedia.org/wiki/Trie), so it shoud be light enough to carry a lot of users.
++
++Some other enhancements are possible, developing the actual implementation:
++
++ - C++ code may be separated from UserModel files;
++ - a graphical userlist may be added;
++ - a filter username selection may be coupled to graphical userlist.
++   (for example, if the user types the letter a, all entries in the userlist not starting with a disappear.
++ - the autocompletion matching rules may be enhanced, to something better than a simple serial mechanism.
++   (for example, if the user types the letters a and the letter b, all entries containing the letter a followed -even not immediatly- by b, are selected.
++
++Here  a list of files interested by the patch:
++
++
++diff -ruN sddm/CMakeLists.txt.user sddmAuc/CMakeLists.txt.user
++diff -ruN sddm/components/2.0/UNameBox.qml sddmAuc/components/2.0/UNameBox.qml
++diff -ruN sddm/components/CMakeLists.txt sddmAuc/components/CMakeLists.txt
++diff -ruN sddm/components/common/qmldir sddmAuc/components/common/qmldir
++diff -ruN sddm/data/themes/autoComp/Main.qml sddmAuc/data/themes/autoComp/Main.qml
++diff -ruN sddm/data/themes/autoComp/metadata.desktop sddmAuc/data/themes/autoComp/metadata.desktop
++diff -ruN sddm/data/themes/autoComp/README sddmAuc/data/themes/autoComp/README
++diff -ruN sddm/data/themes/autoComp/theme.conf sddmAuc/data/themes/autoComp/theme.conf
++diff -ruN sddm/data/themes/CMakeLists.txt sddmAuc/data/themes/CMakeLists.txt
++diff -ruN sddm/README.md sddmAuc/README.md
++diff -ruN sddm/src/greeter/AutoCompletion.cpp sddmAuc/src/greeter/AutoCompletion.cpp
++diff -ruN sddm/src/greeter/AutoCompletion.h sddmAuc/src/greeter/AutoCompletion.h
++diff -ruN sddm/src/greeter/UserModel.cpp sddmAuc/src/greeter/UserModel.cpp
++diff -ruN sddm/src/greeter/UserModel.h sddmAuc/src/greeter/UserModel.h
+diff -ruN sddm/sddmAuc.patch sddmAuc/sddmAuc.patch
+--- sddm/sddmAuc.patch	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/sddmAuc.patch	2016-08-05 00:15:49.895661308 +0200
+@@ -0,0 +1,805 @@
++diff -ruN sddm/components/2.0/UNameBox.qml sddmAuc.uffa/components/2.0/UNameBox.qml
++--- sddm/components/2.0/UNameBox.qml	1970-01-01 01:00:00.000000000 +0100
+++++ sddmAuc.uffa/components/2.0/UNameBox.qml	2016-08-04 13:27:31.186850378 +0200
++@@ -0,0 +1,133 @@
+++/***************************************************************************
+++*Copyright (c) 2013 Nikita Mikhaylov <nslqqq@gmail.com>
+++*
+++*Permission is hereby granted, free of charge, to any person
+++*obtaining a copy of this software and associated documentation
+++*files (the "Software"), to deal in the Software without restriction,
+++*including without limitation the rights to use, copy, modify, merge,
+++*publish, distribute, sublicense, and/or sell copies of the Software,
+++*and to permit persons to whom the Software is furnished to do so,
+++*subject to the following conditions:
+++*
+++*The above copyright notice and this permission notice shall be included
+++*in all copies or substantial portions of the Software.
+++*
+++*THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+++*OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+++*FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+++*THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+++*OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+++*ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+++*OR OTHER DEALINGS IN THE SOFTWARE.
+++*
+++***************************************************************************/
+++
+++import QtQuick 2.0
+++
+++FocusScope {
+++        id: container
+++        width: 150; height: 30
+++
+++        property int auC: userModel.initAutoCompletion;
+++        property color color: "white"
+++        property color borderColor: "#ababab"
+++        property color focusColor: "#266294"
+++        property color hoverColor: "#5692c4"
+++        property alias radius: main.radius
+++        property alias font: innerText.font
+++        property alias textColor: innerText.color
+++        property string inputText: ""
+++        property string completion: " - completion"
+++        property alias text: innerText.text
+++        property string head
+++        property string tail
+++        property string username: head+tail
+++
+++        signal sendSearchSeed(string testo)
+++
+++    Rectangle {
+++        id: main
+++
+++        width: 150; height: 30
+++        anchors.verticalCenter: parent.verticalCenter
+++
+++        color: parent.activeFocus? "#f1f1f1" : "#ffffff"
+++        border.color: container.borderColor
+++        border.width:1
+++
+++        Behavior on border.color { ColorAnimation { duration: 100 } }
+++        states: [
+++            State {
+++                name: "hover"; when: mouseArea.containsMouse
+++                PropertyChanges {
+++                    target: main
+++                    border.width: 1
+++                    border.color: container.hoverColor
+++                    color: parent.activeFocus? "#f1f1f1" : "#ffffff"
+++                }
+++            },
+++            State {
+++                name: "focus"; when: container.activeFocus && !mouseArea.containsMouse
+++                PropertyChanges {
+++                    target: main
+++                    border.width: 1
+++                    border.color: container.focusColor
+++                }
+++            }
+++        ]
+++    }
+++
+++    Keys.onPressed: {
+++        if (
+++            event.key === Qt.Key_Return ||
+++            event.key === Qt.Key_Enter  ||
+++            event.key === Qt.Key_Escape ||
+++            event.key === Qt.Key_Tab
+++            )
+++        {
+++            this.focus= false
+++            event.editingFinished()
+++            this.sendSearchSeed(event.text)
+++        }
+++          else if (event.key === Qt.Key_Backspace)
+++        {
+++            this.inputText=this.inputText.slice(0,-1)
+++            this.sendSearchSeed(event.text)
+++        }
+++          else if (event.text==="");
+++          else
+++        {
+++            this.inputText += event.text
+++            this.sendSearchSeed(event.text)
+++        }
+++        userModel.head=event.text
+++        userModel.tail=""
+++        //user_entry.text = userModel.head
+++        head = userModel.head
+++        tail = userModel.tail
+++        user_entry2.text=username
+++        //user_entry2.text = "<span style='font:bold'>" + userModel.head + "</span><span style='font: italic; color: grey'>" + userModel.tail + "</span>"
+++        event.accepted
+++    }
+++
+++    MouseArea {
+++        id: mouseArea
+++        cursorShape: parent.activeFocus? Qt.IBeamCursor : Qt.PointingHandCursor
+++
+++        anchors.fill: container
+++
+++        hoverEnabled: true
+++
+++        onEntered: if(main.state=="") main.state = "hover"
+++        onExited: if(main.state=="hover") main.state = ""
+++        onClicked: parent.focus = true
+++    }
+++    Text {
+++        id: innerText
+++        width: parent.width - 16
+++        anchors.centerIn: parent
+++        textFormat: Text.RichText
+++        text: "<span style='font:bold'>" + head + "</span><span style='font: italic; color: grey'>" + tail + "</span>"
+++        focus: true
+++    }
+++}
++diff -ruN sddm/components/CMakeLists.txt sddmAuc.uffa/components/CMakeLists.txt
++--- sddm/components/CMakeLists.txt	2016-08-04 13:13:44.760877425 +0200
+++++ sddmAuc.uffa/components/CMakeLists.txt	2016-08-04 13:29:54.165993549 +0200
++@@ -1,4 +1,5 @@
++ configure_file("${COMPONENTS_VERSION}/LayoutBox.qml" "${COMPONENTS_VERSION}/LayoutBox.qml")
+++configure_file("${COMPONENTS_VERSION}/UNameBox.qml" "${COMPONENTS_VERSION}/UNameBox.qml")
++ configure_file("common/qmldir" "common/qmldir")
++ 
++ install(DIRECTORY "${COMPONENTS_VERSION}/" DESTINATION "${QT_IMPORTS_DIR}/SddmComponents")
++diff -ruN sddm/components/common/qmldir sddmAuc.uffa/components/common/qmldir
++--- sddm/components/common/qmldir	2016-08-04 13:13:44.760877425 +0200
+++++ sddmAuc.uffa/components/common/qmldir	2016-08-04 13:45:35.814333705 +0200
++@@ -11,3 +11,4 @@
++ PictureBox      ${COMPONENTS_VERSION} PictureBox.qml
++ TextBox         ${COMPONENTS_VERSION} TextBox.qml
++ TextConstants   ${COMPONENTS_VERSION} TextConstants.qml
+++UNameBox         ${COMPONENTS_VERSION} UNameBox.qml
++I file binari sddm/data/themes/autoComp/angle-down.png e sddmAuc.uffa/data/themes/autoComp/angle-down.png sono diversi
++I file binari sddm/data/themes/autoComp/elarun.jpg e sddmAuc.uffa/data/themes/autoComp/elarun.jpg sono diversi
++I file binari sddm/data/themes/autoComp/images/background.png e sddmAuc.uffa/data/themes/autoComp/images/background.png sono diversi
++I file binari sddm/data/themes/autoComp/images/lock.png e sddmAuc.uffa/data/themes/autoComp/images/lock.png sono diversi
++I file binari sddm/data/themes/autoComp/images/login_active.png e sddmAuc.uffa/data/themes/autoComp/images/login_active.png sono diversi
++I file binari sddm/data/themes/autoComp/images/login_normal.png e sddmAuc.uffa/data/themes/autoComp/images/login_normal.png sono diversi
++I file binari sddm/data/themes/autoComp/images/rectangle_overlay.png e sddmAuc.uffa/data/themes/autoComp/images/rectangle_overlay.png sono diversi
++I file binari sddm/data/themes/autoComp/images/rectangle.png e sddmAuc.uffa/data/themes/autoComp/images/rectangle.png sono diversi
++I file binari sddm/data/themes/autoComp/images/session_normal.png e sddmAuc.uffa/data/themes/autoComp/images/session_normal.png sono diversi
++I file binari sddm/data/themes/autoComp/images/system_hibernate.png e sddmAuc.uffa/data/themes/autoComp/images/system_hibernate.png sono diversi
++I file binari sddm/data/themes/autoComp/images/system_reboot.png e sddmAuc.uffa/data/themes/autoComp/images/system_reboot.png sono diversi
++I file binari sddm/data/themes/autoComp/images/system_shutdown.png e sddmAuc.uffa/data/themes/autoComp/images/system_shutdown.png sono diversi
++I file binari sddm/data/themes/autoComp/images/system_suspend.png e sddmAuc.uffa/data/themes/autoComp/images/system_suspend.png sono diversi
++I file binari sddm/data/themes/autoComp/images/system_switch_user.png e sddmAuc.uffa/data/themes/autoComp/images/system_switch_user.png sono diversi
++I file binari sddm/data/themes/autoComp/images/user_icon.png e sddmAuc.uffa/data/themes/autoComp/images/user_icon.png sono diversi
++diff -ruN sddm/data/themes/autoComp/Main.qml sddmAuc.uffa/data/themes/autoComp/Main.qml
++--- sddm/data/themes/autoComp/Main.qml	1970-01-01 01:00:00.000000000 +0100
+++++ sddmAuc.uffa/data/themes/autoComp/Main.qml	2016-08-04 09:57:51.386759680 +0200
++@@ -0,0 +1,302 @@
+++/***************************************************************************
+++* Copyright (c) 2013 Reza Fatahilah Shah <rshah0385@kireihana.com>
+++* Copyright (c) 2013 Abdurrahman AVCI <abdurrahmanavci@gmail.com>
+++*
+++* Permission is hereby granted, free of charge, to any person
+++* obtaining a copy of this software and associated documentation
+++* files (the "Software"), to deal in the Software without restriction,
+++* including without limitation the rights to use, copy, modify, merge,
+++* publish, distribute, sublicense, and/or sell copies of the Software,
+++* and to permit persons to whom the Software is furnished to do so,
+++* subject to the following conditions:
+++*
+++* The above copyright notice and this permission notice shall be included
+++* in all copies or substantial portions of the Software.
+++*
+++* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+++* OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+++* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+++* THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+++* OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+++* ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+++* OR OTHER DEALINGS IN THE SOFTWARE.
+++*
+++***************************************************************************/
+++
+++import QtQuick 2.0;
+++import SddmComponents 2.0;
+++/*import QtQuick ${COMPONENTS_VERSION}
+++//import SddmComponents ${COMPONENTS_VERSION}
+++*/
+++
+++Rectangle {
+++    width: 640
+++    height: 480
+++
+++    LayoutMirroring.enabled: Qt.locale().textDirection == Qt.RightToLeft
+++    LayoutMirroring.childrenInherit: true
+++
+++    TextConstants { id: textConstants }
+++
+++    Connections {
+++        target: sddm
+++        onLoginSucceeded: {
+++        }
+++        onLoginFailed: {
+++        }
+++    }
+++
+++    Background {
+++        anchors.fill: parent
+++        source: config.background
+++        fillMode: Image.PreserveAspectCrop
+++        onStatusChanged: {
+++            if (status == Image.Error && source != config.defaultBackground) {
+++                source = config.defaultBackground
+++            }
+++        }
+++    }
+++
+++    Rectangle {
+++        anchors.fill: parent
+++        color: "transparent"
+++        //visible: primaryScreen
+++
+++        Rectangle {
+++            width: 416; height: 262
+++            color: "#00000000"
+++
+++            anchors.centerIn: parent
+++
+++            Image {
+++                anchors.fill: parent
+++                source: "images/rectangle.png"
+++            }
+++
+++            Image {
+++                anchors.fill: parent
+++                source: "images/rectangle_overlay.png"
+++                opacity: 0.1
+++            }
+++
+++            Item {
+++                anchors.margins: 20
+++                anchors.fill: parent
+++
+++                Text {
+++                    height: 50
+++                    anchors.top: parent.top
+++                    anchors.left: parent.left; anchors.right: parent.right
+++
+++                    color: "#0b678c"
+++                    opacity: 0.75
+++
+++                    text: sddm.hostName
+++
+++                    font.bold: true
+++                    font.pixelSize: 18
+++                }
+++
+++                Column {
+++                    anchors.centerIn: parent
+++
+++                    Row {
+++                        Image { source: "images/user_icon.png" }
+++                        UNameBox {
+++                            id: user_entry
+++                        }
+++                    }
+++
+++/*
+++                    Row {
+++                        Image { source: "images/user_icon.png" }
+++                        TextBox {
+++                            id: user_entry2
+++
+++                            width: 150; height: 30
+++                            anchors.verticalCenter: parent.verticalCenter;
+++
+++                            font.pixelSize: 14
+++
+++                            KeyNavigation.backtab: layoutBox; KeyNavigation.tab: pw_entry
+++                        }
+++                    }
+++*/
+++
+++                    Row {
+++
+++                        Image { source: "images/lock.png" }
+++
+++                        PasswordBox {
+++                            id: pw_entry
+++                            width: 150; height: 30
+++                            anchors.verticalCenter: parent.verticalCenter;
+++
+++                            tooltipBG: "CornflowerBlue"
+++
+++                            font.pixelSize: 14
+++
+++                            KeyNavigation.backtab: user_entry; KeyNavigation.tab: login_button
+++
+++                            Keys.onPressed: {
+++                                if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+++                                    sddm.login(user_entry.userName, pw_entry.text, menu_session.index)
+++                                    event.accepted = true
+++                                }
+++                            }
+++                        }
+++                    }
+++                }
+++
+++                ImageButton {
+++                    id: login_button
+++                    anchors.right: parent.right
+++                    anchors.verticalCenter: parent.verticalCenter
+++                    anchors.margins: 20
+++
+++                    source: "images/login_normal.png"
+++
+++                    onClicked: sddm.login(user_entry.userName, pw_entry.text, menu_session.index)
+++
+++                    KeyNavigation.backtab: pw_entry; KeyNavigation.tab: session_button
+++                }
+++
+++                Item {
+++                    height: 20
+++                    anchors.bottom: parent.bottom
+++                    anchors.left: parent.left; anchors.right: parent.right
+++
+++                    Row {
+++                        id: buttonRow
+++                        anchors.left: parent.left
+++                        anchors.verticalCenter: parent.verticalCenter
+++
+++                        spacing: 8
+++
+++                        ImageButton {
+++                            id: system_button
+++                            source: "images/system_shutdown.png"
+++                            onClicked: sddm.powerOff()
+++
+++                            KeyNavigation.backtab: session_button; KeyNavigation.tab: reboot_button
+++                        }
+++
+++                        ImageButton {
+++                            id: reboot_button
+++                            source: "images/system_reboot.png"
+++                            onClicked: sddm.reboot()
+++
+++                            KeyNavigation.backtab: system_button; KeyNavigation.tab: suspend_button
+++                        }
+++
+++                        ImageButton {
+++                            id: suspend_button
+++                            source: "images/system_suspend.png"
+++                            visible: sddm.canSuspend
+++                            onClicked: sddm.suspend()
+++
+++                            KeyNavigation.backtab: reboot_button; KeyNavigation.tab: hibernate_button
+++                        }
+++
+++                        ImageButton {
+++                            id: hibernate_button
+++                            source: "images/system_hibernate.png"
+++                            visible: sddm.canHibernate
+++                            onClicked: sddm.hibernate()
+++
+++                            KeyNavigation.backtab: suspend_button; KeyNavigation.tab: session
+++                        }
+++                    }
+++
+++                    Text {
+++                        id: time_label
+++                        anchors.right: parent.right
+++                        anchors.bottom: parent.bottom
+++
+++                        text: Qt.formatDateTime(new Date(), "dddd, dd MMMM yyyy HH:mm AP")
+++
+++                        horizontalAlignment: Text.AlignRight
+++
+++                        color: "#0b678c"
+++                        font.bold: true
+++                        font.pixelSize: 12
+++                    }
+++
+++                    Menu {
+++                        id: menu_session
+++                        width: 200; height: 0
+++                        anchors.top: buttonRow.bottom; anchors.left: buttonRow.left
+++
+++                        model: sessionModel
+++                        index: sessionModel.lastIndex
+++                    }
+++                }
+++            }
+++        }
+++    }
+++
+++    Rectangle {
+++        id: actionBar
+++        anchors.top: parent.top;
+++        anchors.horizontalCenter: parent.horizontalCenter
+++        width: parent.width; height: 40
+++
+++        Row {
+++            anchors.left: parent.left
+++            anchors.margins: 5
+++            height: parent.height
+++            spacing: 5
+++
+++            Text {
+++                height: parent.height
+++                anchors.verticalCenter: parent.verticalCenter
+++
+++                text: textConstants.session
+++                font.pixelSize: 14
+++                verticalAlignment: Text.AlignVCenter
+++            }
+++
+++            ComboBox {
+++                id: session
+++                width: 245
+++                anchors.verticalCenter: parent.verticalCenter
+++
+++                arrowIcon: "angle-down.png"
+++
+++                model: sessionModel
+++                index: sessionModel.lastIndex
+++
+++                font.pixelSize: 14
+++
+++                KeyNavigation.backtab: hibernate_button; KeyNavigation.tab: layoutBox
+++            }
+++
+++            Text {
+++                height: parent.height
+++                anchors.verticalCenter: parent.verticalCenter
+++
+++                text: textConstants.layout
+++                font.pixelSize: 14
+++                verticalAlignment: Text.AlignVCenter
+++            }
+++
+++            LayoutBox {
+++                id: layoutBox
+++                width: 90
+++                anchors.verticalCenter: parent.verticalCenter
+++                font.pixelSize: 14
+++
+++                arrowIcon: "angle-down.png"
+++
+++                KeyNavigation.backtab: session; KeyNavigation.tab: user_entry
+++            }
+++        }
+++    }
+++
+++    Component.onCompleted: {
+++        if (user_entry.text === "")
+++            user_entry.focus = true
+++        else
+++            pw_entry.focus = true
+++    }
+++}
++diff -ruN sddm/data/themes/autoComp/metadata.desktop sddmAuc.uffa/data/themes/autoComp/metadata.desktop
++--- sddm/data/themes/autoComp/metadata.desktop	1970-01-01 01:00:00.000000000 +0100
+++++ sddmAuc.uffa/data/themes/autoComp/metadata.desktop	2016-08-04 09:25:53.343514561 +0200
++@@ -0,0 +1,44 @@
+++[SddmGreeterTheme]
+++Name=AutoComp
+++Name[ca]=AutoComp
+++Name[da]=AutoComp
+++Name[de]=AutoComp
+++Name[el]=AutoComp
+++Name[es]=AutoComp
+++Name[et]=AutoComp
+++Name[fi]=AutoComp
+++Name[ga]=AutoComp
+++Name[gl]=AutoComp
+++Name[hu]=AutoComp
+++Name[ia]=AutoComp
+++Name[kk]=Еларун
+++Name[ko]=AutoComp
+++Name[nb]=AutoComp
+++Name[nl]=AutoComp
+++Name[pl]=AutoComp
+++Name[pt]=AutoComp
+++Name[pt_BR]=AutoComp
+++Name[ro]=AutoComp
+++Name[ru]=Эларан
+++Name[sk]=AutoComp
+++Name[sl]=AutoComp
+++Name[sr@ijekavianlatin]=AutoComp
+++Name[sr@latin]=AutoComp
+++Name[sv]=AutoComp
+++Name[x-test]=xxAutoCompx
+++Name[zh_CN]=AutoComp
+++Name[zh_TW]=AutoComp
+++
+++Description=AutoComp KDM theme ported to SDDM. \nThe original theme is based on work of Roman Shtylman & Nuno Pinheiro
+++Type=sddm-theme
+++Author=Reza Fatahilah Shah
+++Copyright=(c) 2013, Reza Fatahilah Shah
+++Screenshot=elarun.jpg
+++License=GPL
+++Version=0.1
+++MainScript=Main.qml
+++ConfigFile=theme.conf
+++TranslationsDirectory=translations
+++Theme-Id=autoComp
+++Theme-API=${COMPONENTS_VERSION}
+++Website=https://github.com/sddm/sddm
++diff -ruN sddm/data/themes/autoComp/README sddmAuc.uffa/data/themes/autoComp/README
++--- sddm/data/themes/autoComp/README	1970-01-01 01:00:00.000000000 +0100
+++++ sddmAuc.uffa/data/themes/autoComp/README	2016-07-19 15:07:13.649719304 +0200
++@@ -0,0 +1,13 @@
+++This theme is based on the KDM Elarun theme, ported to SDDM theme.
+++Thanks to these people for their great works.
+++Not all functionality from original theme are ported.
+++
+++Background images:
+++Author=Nuno Pinheiro
+++Email=nuno@oxygen-icons.org
+++License=LGPLv3
+++
+++Original KDM theme:
+++Author=Roman Shtylman & Nuno Pinheiro
+++Copyright=GPL 2010 Roman Shtylman | nuno@oxygen-icons.org, 2012 Nuno Pineheiro
+++License=GPL
++diff -ruN sddm/data/themes/autoComp/theme.conf sddmAuc.uffa/data/themes/autoComp/theme.conf
++--- sddm/data/themes/autoComp/theme.conf	1970-01-01 01:00:00.000000000 +0100
+++++ sddmAuc.uffa/data/themes/autoComp/theme.conf	2016-07-19 15:07:13.649719304 +0200
++@@ -0,0 +1,2 @@
+++[General]
+++background=images/background.png
++diff -ruN sddm/data/themes/CMakeLists.txt sddmAuc.uffa/data/themes/CMakeLists.txt
++--- sddm/data/themes/CMakeLists.txt	2016-08-04 13:13:44.763877406 +0200
+++++ sddmAuc.uffa/data/themes/CMakeLists.txt	2016-08-04 13:29:01.686307822 +0200
++@@ -1,4 +1,4 @@
++-set(THEMES elarun maldives)
+++set(THEMES elarun maldives autoComp)
++ 
++ foreach(THEME ${THEMES})
++     # We assume that theme-specific translations are stored
++diff -ruN sddm/src/greeter/UserModel.cpp sddmAuc.uffa/src/greeter/UserModel.cpp
++--- sddm/src/greeter/UserModel.cpp	2016-08-04 13:13:44.779877307 +0200
+++++ sddmAuc.uffa/src/greeter/UserModel.cpp	2016-08-04 13:27:53.557716184 +0200
++@@ -24,12 +24,16 @@
++ 
++ #include <QFile>
++ #include <QList>
+++#include <QStringBuilder>
++ #include <QTextStream>
++ #include <QStringList>
++ 
++ #include <memory>
++ #include <pwd.h>
++ 
+++#include <stdio.h>
+++#include <iostream>
+++
++ namespace SDDM {
++     class User {
++     public:
++@@ -172,4 +176,155 @@
++     int UserModel::disableAvatarsThreshold() const {
++         return mainConfig.Theme.DisableAvatarsThreshold.get();
++     }
+++
+++    UserModel::letter* UserModel::findCharacter(letter *currentLeaf, char character) {
+++        letter* pt;
+++        while(1) {
+++            for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
+++                if (pt->character==character) {
+++                    return pt;
+++                }
+++            }
+++            return NULL;
+++        }
+++    }
+++
+++    UserModel::letter* UserModel::addLetterToTrie(char character, int sign) {
+++        letter* nodo = new letter;
+++
+++        nodo->character=character;
+++        nodo->dx=NULL;
+++        nodo->down=NULL;
+++        nodo->sign=sign;
+++
+++        return nodo;
+++    }
+++
+++    UserModel::letter * UserModel::readWord(letter *currentLeaf,const char *word) {
+++        while(1) {
+++           letter *nextLetter=NULL;
+++           letter *pt;
+++
+++           for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
+++               if(pt->character==*word) {
+++                   nextLetter=pt;
+++                   break;
+++             }
+++           }
+++
+++           if (nextLetter==NULL) return NULL;
+++           if (*word=='\0') return pt;
+++
+++           currentLeaf=nextLetter->down;
+++           word++;
+++        }
+++    }
+++
+++    void UserModel::addStringToTrie(letter **root,const char *word, int sign) {
+++        if (NULL == *root) {qWarning("empty Trie");return;}
+++        letter* stringCursor=(*root)->down;
+++        if (stringCursor==NULL) {
+++            for(stringCursor=*root;*word;stringCursor=stringCursor->down) {
+++                stringCursor->down=addLetterToTrie(*word,sign);
+++                word++;
+++            }
+++            stringCursor->down=addLetterToTrie('\0',sign);
+++            return;
+++        }
+++
+++        if(readWord(stringCursor, word)) qWarning("duplicate word; %s",word);
+++
+++        while(*word != '\0') {
+++            if (*word == stringCursor->character) {
+++                word++;
+++                stringCursor=stringCursor->down;
+++            } else {
+++              break;
+++            }
+++        }
+++
+++        while(stringCursor->dx) {
+++            if(*word == stringCursor->dx->character) {
+++                word++;
+++                addStringToTrie(&(stringCursor->dx),word,sign);
+++                return;
+++            }
+++            stringCursor=stringCursor->dx;
+++        }
+++
+++        stringCursor->dx=addLetterToTrie(*word,sign);
+++        if(!(*word)) return;
+++        word++;
+++
+++        for(stringCursor=stringCursor->dx; *word; stringCursor=stringCursor->down) {
+++            stringCursor->down=addLetterToTrie(*word,sign);
+++            word++;
+++        }
+++
+++        stringCursor->down=addLetterToTrie('\0',sign);
+++        return;
+++    }
+++
+++    void UserModel::makeTrie(letter** root) {
+++        *root = addLetterToTrie('\0',0);
+++    }
+++
+++    int UserModel::initAutoCompletion() {
+++        makeTrie(&root);
+++
+++       for (int i=0;i<d->users.size();i++) {
+++           const char* username=d->users.at(i)->name.toStdString().c_str();
+++           addStringToTrie(&root,username,0);
+++       }
+++       stackPointer=stack;
+++       *(stackPointer++)=root;
+++       bufferEnd=buffer;
+++       return 0;
+++    }
+++
+++    void UserModel::completion(letter* pt) {
+++        privateTail.clear();
+++        while (pt->down->character!='\0') {
+++            privateTail+=QStringLiteral("%1").arg(pt->down->character);
+++            pt=pt->down;
+++        }
+++    }
+++
+++    QString UserModel::tail() {return privateTail;}
+++    QString UserModel::head() {return privateHead;}
+++    void UserModel::setTail(QString tail) {return;}
+++    void UserModel::setHead(QString inputString) {
+++       QChar inputChar=inputString.at(0);
+++
+++       c=inputChar.unicode();
+++       if (c==DEL) {
+++           if (buffer<bufferEnd) *(--bufferEnd)='\0';
+++           privateHead=QString::fromStdString(buffer);
+++            if (lockFlag) {
+++                if (!(--lockFlag))
+++                    if (buffer<bufferEnd) completion(*(stackPointer-1));
+++            }
+++            else {
+++                if (stack<stackPointer-1) stackPointer--;
+++                if (buffer<bufferEnd) completion((*(stackPointer-1)));
+++                else privateTail.clear();
+++            }
+++
+++       } else {
+++           *bufferEnd++=c;
+++           *bufferEnd='\0';
+++           privateHead=QString::fromStdString(buffer);
+++           if (lockFlag) lockFlag++;
+++           else {
+++               *stackPointer=findCharacter((*(stackPointer-1))->down,c);
+++               if (*stackPointer==NULL) {
+++                   privateTail.clear();
+++                   lockFlag=1;
+++               } else {
+++                   completion(*(stackPointer++));}
+++           }
+++       }
+++    return;
+++
+++    }
++ }
++diff -ruN sddm/src/greeter/UserModel.h sddmAuc.uffa/src/greeter/UserModel.h
++--- sddm/src/greeter/UserModel.h	2016-08-04 13:13:44.779877307 +0200
+++++ sddmAuc.uffa/src/greeter/UserModel.h	2016-08-04 13:27:53.557716184 +0200
++@@ -24,17 +24,27 @@
++ 
++ #include <QHash>
++ 
+++#define BUF_SIZE 200
+++#define DEL '\b'
+++
++ namespace SDDM {
++     class UserModelPrivate;
++ 
++     class UserModel : public QAbstractListModel {
++         Q_OBJECT
++         Q_DISABLE_COPY(UserModel)
+++
++         Q_PROPERTY(int lastIndex READ lastIndex CONSTANT)
++         Q_PROPERTY(QString lastUser READ lastUser CONSTANT)
++         Q_PROPERTY(int count READ rowCount CONSTANT)
++         Q_PROPERTY(int disableAvatarsThreshold READ disableAvatarsThreshold CONSTANT)
+++
+++        Q_PROPERTY(int initAutoCompletion READ initAutoCompletion CONSTANT)
+++        Q_PROPERTY(QString tail READ tail WRITE setTail)
+++        Q_PROPERTY(QString head READ head WRITE setHead)
+++
++     public:
+++
++         enum UserRoles {
++             NameRole = Qt::UserRole + 1,
++             RealNameRole,
++@@ -55,8 +65,41 @@
++         QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
++ 
++         int disableAvatarsThreshold() const;
++-    private:
+++
+++       typedef struct letter {
+++            char character;
+++            int sign;
+++            letter* dx;
+++            letter* down;
+++        } letter;
+++
+++        QString tail();
+++        void setTail(QString);
+++        QString head();
+++        void setHead(QString);
+++
+++        int initAutoCompletion();
+++        void makeTrie(letter**);
+++        void addStringToTrie(letter**,const char*,int);
+++        letter* findCharacter(letter*,char);
+++        void completion(letter*);
+++        letter* readWord(letter *root,const char *word);
+++        letter*	addLetterToTrie(char, int);
+++
+++   private:
++         UserModelPrivate *d { nullptr };
+++
+++        //QString m_inputString;
+++        QString privateHead;
+++        QString privateTail;
+++        //QString prefix=QStringLiteral("");
+++        char c='\0';
+++        int lockFlag=0;
+++        letter *root;
+++        char buffer[BUF_SIZE]; /*bufferize input character*/
+++        char* bufferEnd;
+++        letter* stack[BUF_SIZE]; /*memorize current autocompletion characters*/
+++        letter** stackPointer;
++     };
++ }
++ 
+diff -ruN sddm/src/greeter/AutoCompletion.cpp sddmAuc/src/greeter/AutoCompletion.cpp
+--- sddm/src/greeter/AutoCompletion.cpp	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/src/greeter/AutoCompletion.cpp	2016-08-04 23:57:10.280749527 +0200
+@@ -0,0 +1,177 @@
++#include "AutoCompletion.h"
++
++#include "Constants.h"
++#include "Configuration.h"
++
++#include <QFile>
++#include <QList>
++#include <QStringBuilder>
++#include <QTextStream>
++#include <QStringList>
++
++#include <memory>
++#include <pwd.h>
++
++namespace SDDM {
++
++    /*AutoCompletion::AutoCompletion(QObject *parent) : QAbstractListModel(parent) , d(new SDDM::UserModel::UserModelPrivate()){
++
++    }*/
++
++    /*AutoCompletion::~AutoCompletion() {
++        delete d;
++    }*/
++
++    AutoCompletion::letter* AutoCompletion::findCharacter(letter *currentLeaf, char character) {
++        letter* pt;
++        while(1) {
++            for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
++                if (pt->character==character) {
++                    return pt;
++                }
++            }
++            return NULL;
++        }
++    }
++
++    AutoCompletion::letter* AutoCompletion::addLetterToTrie(char character, int sign) {
++        letter* nodo = new letter;
++
++        nodo->character=character;
++        nodo->dx=NULL;
++        nodo->down=NULL;
++        nodo->sign=sign;
++
++        return nodo;
++    }
++
++    AutoCompletion::letter * AutoCompletion::readWord(letter *currentLeaf,const char *word) {
++        while(1) {
++           letter *nextLetter=NULL;
++           letter *pt;
++
++           for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
++               if(pt->character==*word) {
++                   nextLetter=pt;
++                   break;
++             }
++           }
++
++           if (nextLetter==NULL) return NULL;
++           if (*word=='\0') return pt;
++
++           currentLeaf=nextLetter->down;
++           word++;
++        }
++    }
++
++    void AutoCompletion::addStringToTrie(letter **root,const char *word, int sign) {
++        if (NULL == *root) {qWarning("empty Trie");return;}
++        letter* stringCursor=(*root)->down;
++        if (stringCursor==NULL) {
++            for(stringCursor=*root;*word;stringCursor=stringCursor->down) {
++                stringCursor->down=addLetterToTrie(*word,sign);
++                word++;
++            }
++            stringCursor->down=addLetterToTrie('\0',sign);
++            return;
++        }
++
++        if(readWord(stringCursor, word)) qWarning("duplicate word; %s",word);
++
++        while(*word != '\0') {
++            if (*word == stringCursor->character) {
++                word++;
++                stringCursor=stringCursor->down;
++            } else {
++              break;
++            }
++        }
++
++        while(stringCursor->dx) {
++            if(*word == stringCursor->dx->character) {
++                word++;
++                addStringToTrie(&(stringCursor->dx),word,sign);
++                return;
++            }
++            stringCursor=stringCursor->dx;
++        }
++
++        stringCursor->dx=addLetterToTrie(*word,sign);
++        if(!(*word)) return;
++        word++;
++
++        for(stringCursor=stringCursor->dx; *word; stringCursor=stringCursor->down) {
++            stringCursor->down=addLetterToTrie(*word,sign);
++            word++;
++        }
++
++        stringCursor->down=addLetterToTrie('\0',sign);
++        return;
++    }
++
++    void AutoCompletion::makeTrie(letter** root) {
++        *root = addLetterToTrie('\0',0);
++    }
++
++    int AutoCompletion::initAutoCompletion() {
++        d=new SDDM::AutoCompletion
++
++        makeTrie(&root);
++
++       for (int i=0;i<d->users.size();i++) {
++           const char* username=d->users.at(i)->name.toStdString().c_str();
++           addStringToTrie(&root,username,0);
++       }
++       stackPointer=stack;
++       *(stackPointer++)=root;
++       bufferEnd=buffer;
++       return 0;
++    }
++
++    void AutoCompletion::completion(letter* pt) {
++        privateTail.clear();
++        while (pt->down->character!='\0') {
++            privateTail+=QStringLiteral("%1").arg(pt->down->character);
++            pt=pt->down;
++        }
++    }
++
++    QString AutoCompletion::tail() {return privateTail;}
++    QString AutoCompletion::head() {return privateHead;}
++    void AutoCompletion::setTail(QString tail) {return;}
++    void AutoCompletion::setHead(QString inputString) {
++      QChar inputChar=inputString.at(0);
++
++       c=inputChar.unicode();
++       if (c==DEL) {
++           if (buffer<bufferEnd) *(--bufferEnd)='\0';
++           privateHead=QString::fromStdString(buffer);
++            if (lockFlag) {
++                if (!(--lockFlag))
++                    if (buffer<bufferEnd) completion(*(stackPointer-1));
++            }
++            else {
++                if (stack<stackPointer-1) stackPointer--;
++                if (buffer<bufferEnd) completion((*(stackPointer-1)));
++                else privateTail.clear();
++            }
++
++       } else {
++           *bufferEnd++=c;
++           *bufferEnd='\0';
++           privateHead=QString::fromStdString(buffer);
++           if (lockFlag) lockFlag++;
++           else {
++               *stackPointer=findCharacter((*(stackPointer-1))->down,c);
++               if (*stackPointer==NULL) {
++                   privateTail.clear();
++                   lockFlag=1;
++               } else {
++                   completion(*(stackPointer++));}
++           }
++       }
++    return;
++
++    }
++}
+diff -ruN sddm/src/greeter/AutoCompletion.h sddmAuc/src/greeter/AutoCompletion.h
+--- sddm/src/greeter/AutoCompletion.h	1970-01-01 01:00:00.000000000 +0100
++++ sddmAuc/src/greeter/AutoCompletion.h	2016-08-04 22:43:34.102186897 +0200
+@@ -0,0 +1,74 @@
++/***************************************************************************
++* Copyright (c) 2013 Abdurrahman AVCI <abdurrahmanavci@gmail.com>
++*
++* This program is free software; you can redistribute it and/or modify
++* it under the terms of the GNU General Public License as published by
++* the Free Software Foundation; either version 2 of the License, or
++* (at your option) any later version.
++*
++* This program is distributed in the hope that it will be useful,
++* but WITHOUT ANY WARRANTY; without even the implied warranty of
++* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
++* GNU General Public License for more details.
++*
++* You should have received a copy of the GNU General Public License
++* along with this program; if not, write to the
++* Free Software Foundation, Inc.,
++* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++***************************************************************************/
++
++#ifndef AUTOCOMPLETION_H
++#define AUTOCOMPLETION_H
++
++
++#include <QAbstractListModel>
++
++#include <QHash>
++
++#define BUF_SIZE 200
++#define DEL '\b'
++
++namespace SDDM {
++    class AutoCompletion : public QAbstractListModel {
++        Q_OBJECT
++        Q_DISABLE_COPY(AutoCompletion)
++
++        Q_PROPERTY(int initAutoCompletion READ initAutoCompletion CONSTANT)
++        Q_PROPERTY(QString tail READ tail WRITE setTail)
++        Q_PROPERTY(QString head READ head WRITE setHead)
++
++
++    public:
++       typedef struct letter {
++            char character;
++            int sign;
++            letter* dx;
++            letter* down;
++        } letter;
++
++        QString tail();
++        void setTail(QString);
++        QString head();
++        void setHead(QString);
++
++        int initAutoCompletion();
++        void makeTrie(letter**);
++        void addStringToTrie(letter**,const char*,int);
++        letter* findCharacter(letter*,char);
++        void completion(letter*);
++        letter* readWord(letter *root,const char *word);
++        letter*	addLetterToTrie(char, int);
++
++   private:
++        QString privateHead;
++        QString privateTail;
++        char c='\0';
++        int lockFlag=0;
++        letter *root;
++        char buffer[BUF_SIZE]; /*bufferize input character*/
++        char* bufferEnd;
++        letter* stack[BUF_SIZE]; /*memorize current autocompletion characters*/
++        letter** stackPointer;
++    };
++}
++#endif // AUTOCOMPLETION_H
+diff -ruN sddm/src/greeter/UserModel.cpp sddmAuc/src/greeter/UserModel.cpp
+--- sddm/src/greeter/UserModel.cpp	2016-08-04 20:18:43.685175311 +0200
++++ sddmAuc/src/greeter/UserModel.cpp	2016-08-05 00:10:00.096919834 +0200
+@@ -24,6 +24,7 @@
+ 
+ #include <QFile>
+ #include <QList>
++#include <QStringBuilder>
+ #include <QTextStream>
+ #include <QStringList>
+ 
+@@ -172,4 +173,155 @@
+     int UserModel::disableAvatarsThreshold() const {
+         return mainConfig.Theme.DisableAvatarsThreshold.get();
+     }
++
++    UserModel::letter* UserModel::findCharacter(letter *currentLeaf, char character) {
++        letter* pt;
++        while(1) {
++            for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
++                if (pt->character==character) {
++                    return pt;
++                }
++            }
++            return NULL;
++        }
++    }
++
++    UserModel::letter* UserModel::addLetterToTrie(char character, int sign) {
++        letter* nodo = new letter;
++
++        nodo->character=character;
++        nodo->dx=NULL;
++        nodo->down=NULL;
++        nodo->sign=sign;
++
++        return nodo;
++    }
++
++    UserModel::letter * UserModel::readWord(letter *currentLeaf,const char *word) {
++        while(1) {
++           letter *nextLetter=NULL;
++           letter *pt;
++
++           for (pt=currentLeaf;pt != NULL;pt=pt->dx) {
++               if(pt->character==*word) {
++                   nextLetter=pt;
++                   break;
++             }
++           }
++
++           if (nextLetter==NULL) return NULL;
++           if (*word=='\0') return pt;
++
++           currentLeaf=nextLetter->down;
++           word++;
++        }
++    }
++
++    void UserModel::addStringToTrie(letter **root,const char *word, int sign) {
++        if (NULL == *root) {qWarning("empty Trie");return;}
++        letter* stringCursor=(*root)->down;
++        if (stringCursor==NULL) {
++            for(stringCursor=*root;*word;stringCursor=stringCursor->down) {
++                stringCursor->down=addLetterToTrie(*word,sign);
++                word++;
++            }
++            stringCursor->down=addLetterToTrie('\0',sign);
++            return;
++        }
++
++        if(readWord(stringCursor, word)) qWarning("duplicate word; %s",word);
++
++        while(*word != '\0') {
++            if (*word == stringCursor->character) {
++                word++;
++                stringCursor=stringCursor->down;
++            } else {
++              break;
++            }
++        }
++
++        while(stringCursor->dx) {
++            if(*word == stringCursor->dx->character) {
++                word++;
++                addStringToTrie(&(stringCursor->dx),word,sign);
++                return;
++            }
++            stringCursor=stringCursor->dx;
++        }
++
++        stringCursor->dx=addLetterToTrie(*word,sign);
++        if(!(*word)) return;
++        word++;
++
++        for(stringCursor=stringCursor->dx; *word; stringCursor=stringCursor->down) {
++            stringCursor->down=addLetterToTrie(*word,sign);
++            word++;
++        }
++
++        stringCursor->down=addLetterToTrie('\0',sign);
++        return;
++    }
++
++    void UserModel::makeTrie(letter** root) {
++        *root = addLetterToTrie('\0',0);
++    }
++
++    int UserModel::initAutoCompletion() {
++        makeTrie(&root);
++
++       for (int i=0;i<d->users.size();i++) {
++           const char* username=d->users.at(i)->name.toStdString().c_str();
++           addStringToTrie(&root,username,0);
++       }
++       stackPointer=stack;
++       *(stackPointer++)=root;
++       bufferEnd=buffer;
++       return 0;
++    }
++
++    void UserModel::completion(letter* pt) {
++        privateTail.clear();
++        while (pt->down->character!='\0') {
++            privateTail+=QStringLiteral("%1").arg(pt->down->character);
++            pt=pt->down;
++        }
++    }
++
++    QString UserModel::tail() {return privateTail;}
++    QString UserModel::head() {return privateHead;}
++    void UserModel::setTail(QString tail) {return;}
++    void UserModel::setHead(QString inputString) {
++       QChar inputChar=inputString.at(0);
++
++       c=inputChar.unicode();
++       if (c==DEL) {
++           if (buffer<bufferEnd) *(--bufferEnd)='\0';
++           privateHead=QString::fromStdString(buffer);
++            if (lockFlag) {
++                if (!(--lockFlag))
++                    if (buffer<bufferEnd) completion(*(stackPointer-1));
++            }
++            else {
++                if (stack<stackPointer-1) stackPointer--;
++                if (buffer<bufferEnd) completion((*(stackPointer-1)));
++                else privateTail.clear();
++            }
++
++       } else {
++           *bufferEnd++=c;
++           *bufferEnd='\0';
++           privateHead=QString::fromStdString(buffer);
++           if (lockFlag) lockFlag++;
++           else {
++               *stackPointer=findCharacter((*(stackPointer-1))->down,c);
++               if (*stackPointer==NULL) {
++                   privateTail.clear();
++                   lockFlag=1;
++               } else {
++                   completion(*(stackPointer++));}
++           }
++       }
++    return;
++
++    }
+ }
+diff -ruN sddm/src/greeter/UserModel.h sddmAuc/src/greeter/UserModel.h
+--- sddm/src/greeter/UserModel.h	2016-08-04 20:18:43.685175311 +0200
++++ sddmAuc/src/greeter/UserModel.h	2016-08-05 00:11:49.075215159 +0200
+@@ -24,17 +24,27 @@
+ 
+ #include <QHash>
+ 
++#define BUF_SIZE 200
++#define DEL '\b'
++
+ namespace SDDM {
+     class UserModelPrivate;
+ 
+     class UserModel : public QAbstractListModel {
+         Q_OBJECT
+         Q_DISABLE_COPY(UserModel)
++
+         Q_PROPERTY(int lastIndex READ lastIndex CONSTANT)
+         Q_PROPERTY(QString lastUser READ lastUser CONSTANT)
+         Q_PROPERTY(int count READ rowCount CONSTANT)
+         Q_PROPERTY(int disableAvatarsThreshold READ disableAvatarsThreshold CONSTANT)
++
++        Q_PROPERTY(int initAutoCompletion READ initAutoCompletion CONSTANT)
++        Q_PROPERTY(QString tail READ tail WRITE setTail)
++        Q_PROPERTY(QString head READ head WRITE setHead)
++
+     public:
++
+         enum UserRoles {
+             NameRole = Qt::UserRole + 1,
+             RealNameRole,
+@@ -55,8 +65,39 @@
+         QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+ 
+         int disableAvatarsThreshold() const;
+-    private:
++
++       typedef struct letter {
++            char character;
++            int sign;
++            letter* dx;
++            letter* down;
++        } letter;
++
++        QString tail();
++        void setTail(QString);
++        QString head();
++        void setHead(QString);
++
++        int initAutoCompletion();
++        void makeTrie(letter**);
++        void addStringToTrie(letter**,const char*,int);
++        letter* findCharacter(letter*,char);
++        void completion(letter*);
++        letter* readWord(letter *root,const char *word);
++        letter*	addLetterToTrie(char, int);
++
++   private:
+         UserModelPrivate *d { nullptr };
++
++        QString privateHead;
++        QString privateTail;
++        char c='\0';
++        int lockFlag=0;
++        letter *root;
++        char buffer[BUF_SIZE];
++        char* bufferEnd;
++        letter* stack[BUF_SIZE];
++        letter** stackPointer;
+     };
+ }
+ 
